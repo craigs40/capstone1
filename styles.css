@@ -1,0 +1,92 @@
+body {
+  margin: auto;
+}
+
+.hamburger {
+  height: 30px;
+  width: 30px;
+  padding: 15px;
+}
+
+.nav1,
+.nav2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav1 {
+  justify-content: flex-end;
+  background-color: #4e4e4e;
+  font-size: 16px;
+}
+
+.social-icons {
+  height: 15px;
+  width: 15px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.navlinks1,
+.navlinks2 {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  padding: 10px;
+}
+
+.top-text {
+  color: white;
+}
+
+.nav2 {
+  justify-content: space-evenly;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 150px;
+  margin-left: 50px;
+  padding-top: 5px;
+}
+
+.navlinks2 {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.bottom-text {
+  padding-right: 35px;
+  color: black;
+}
+
+.about {
+  color: red;
+}
+
+.campaign-btn {
+  border: 5px solid red;
+  background-color: white;
+  padding: 10px;
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav1,
+  .nav2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+}
