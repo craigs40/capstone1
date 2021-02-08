@@ -4,7 +4,7 @@
 
 > The project I'm building for the HTML & CSS Capstone Project is based on an online website for a conference based on [this](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) design idea by Cindy Shin in Behance.
 
-![Screenshotp3](https://user-images.githubusercontent.com/71286979/106801846-3777e600-6630-11eb-8665-97f24e1bd64d.png)
+![Screenshotp3]()
 
 ## Built With
 
