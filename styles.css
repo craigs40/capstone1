@@ -4,6 +4,7 @@ body {
   height: auto;
   width: 100%;
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -115,7 +116,7 @@ h1 {
 }
 
 .creative {
-  font-family: 'cocogooseregular';
+  font-family: 'cocogooseregular', sans-serif;
   font-size: 60px;
   background: url(./images/pexels-steve-johnson-1085685.jpg);
   -webkit-background-clip: text;
@@ -199,6 +200,7 @@ li {
 .featured {
   background-color: white;
   padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
 }
 
@@ -229,6 +231,7 @@ li {
   background-color: #4e4e4e;
   padding-top: 20px;
   color: white;
+  padding-bottom: 50px;
 }
 
 .partners {
@@ -250,8 +253,8 @@ li {
   justify-content: center;
   background-color: white;
   color: black;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-size: 10px;
 }
 
@@ -259,15 +262,65 @@ li {
   padding-right: 50px;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .nav1,
   .nav2 {
     display: none;
   }
+
+  header,
+  main,
+  .fs,
+  .footer1,
+  .footer2 {
+    width: 900px;
+  }
+
+  .row,
+  .featured {
+    display: grid;
+  }
+
+  .col2 {
+    margin-left: 200px;
+  }
+
+  .featured,
+  .main,
+  footer {
+    justify-content: center;
+  }
+
+  .logos {
+    padding: 20px;
+  }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .mobile-nav {
     display: none;
+  }
+
+  .logos {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .logos {
+    padding: 20px;
+  }
+
+  .navlinks2,
+  .navlinks1 {
+    margin-right: 0;
   }
 }
