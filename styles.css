@@ -103,7 +103,7 @@ span {
 .header-content {
   margin-left: 100px;
   margin-right: 300px;
-  margin-top: 200px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,6 +138,56 @@ h1 {
 .date {
   font-size: 30px;
   margin: 0;
+}
+
+.location {
+  padding-bottom: 20px;
+}
+
+.main {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  height: 400px;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 2%;
+}
+
+li {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  float: left;
+  width: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 50px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.card-img {
+  height: 50px;
+  width: 50px;
+}
+
+.main-link {
+  padding-top: 50px;
+  color: white;
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
