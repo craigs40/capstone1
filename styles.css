@@ -1,5 +1,22 @@
 body {
   margin: auto;
+  background-image: url(./images/pexels-ibrahim-hafeez-3.jpg);
+  height: auto;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+@font-face {
+  font-family: 'cocogooseregular';
+  src:
+    url('./fonts/cocogoose_pro-trial-webfont.woff2') format('woff2'),
+    url('./fonts/cocogoose_pro-trial-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
 }
 
 .hamburger {
@@ -29,12 +46,13 @@ body {
 
 .navlinks1,
 .navlinks2 {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .navlinks1 {
   padding-bottom: 10px;
+  padding-right: 60px;
 }
 
 a {
@@ -51,6 +69,7 @@ span {
 
 .nav2 {
   justify-content: space-evenly;
+  background-color: white;
 }
 
 .nav-logo {
@@ -66,19 +85,59 @@ span {
 }
 
 .bottom-text {
-  padding-right: 35px;
   color: black;
 }
 
 .about {
-  color: red;
+  color: #ec5242;
 }
 
 .campaign-btn {
-  border: 5px solid red;
+  border: 5px solid #ec5242;
   background-color: white;
   padding: 10px;
-  color: red;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.header-content {
+  margin-left: 100px;
+  margin-right: 300px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.creative {
+  font-family: 'cocogooseregular';
+  font-size: 60px;
+  background: url(./images/pexels-steve-johnson-1085685.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.box-text,
+.date,
+.location {
+  font-weight: bold;
+}
+
+.box-text {
+  border: 2px solid white;
+  padding: 20px;
+  margin-right: 300px;
+}
+
+.date {
+  font-size: 30px;
+  margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
