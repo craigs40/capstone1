@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale-1">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="tickets.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>About</title>
+    <title>Tickets</title>
   </head>
   <body>
     <nav class="mobile-nav">
@@ -43,14 +43,16 @@
       <h1>Select Tickets</h1>
       <hr>
       <div class="step1">
-        <p><img src="" alt="">STEP 1</p>
-        <p>Please select the day when you want to join CC Global Summit 2015</p>
+        <p>
+          <li class="li1">STEP 1</li>
+          <li class="li2">Please select the day when you want to join CC Global Summit 2015</li>
+        </p>
       </div>
-      <table>
+      <table class="table1">
         <tr>
           <th>Ticket</th>
           <th>1-Day-Ticket</th>
-          <th>2-Day-Ticket</th>
+          <th colspan="2">2-Day-Ticket</th>
           <th>CC Affiliate/Partners</th>
         </tr>
         <tr>
@@ -58,23 +60,72 @@
           <td>15. Oct (Thu)</td>
           <td>16. Oct (Fr-)</td>
           <td>15.-16. Oct (Thu-Fri)</td>
+          <td>15.-16. Oct (Thu-Fri)</td>
         </tr>
         <tr>
           <td>Normal</td>
-          <td>$63 <input type="radio"></td>
-          <td>$63 <input type="radio"></td>
-          <td>$90 <input type="radio"></td>
-          <td>$0 <input type="radio"></td>
+          <td class="price">$63 <input type="radio"></td>
+          <td class="price">$63 <input type="radio"></td>
+          <td class="price">$90 <input type="radio"></td>
+          <td class="price">$0 <input type="radio"></td>
         </tr>
         <tr>
           <td>Students</td>
-          <td>$27 <input type="radio"></td>
-          <td>$27 <input type="radio"></td>
-          <td>$45 <input type="radio"></td>
-          <td>$0 <input type="radio"></td>
+          <td class="price">$27 <input type="radio"></td>
+          <td class="price">$27 <input type="radio"></td>
+          <td class="price">$45 <input type="radio"></td>
+          <td class="price">$0 <input type="radio"></td>
         </tr>
       </table>
     </main>
     <section class="lunch">
-      
+      <h1 class="syl">Select Your Lunch</h1>
+      <hr>
+      <div class="step2">
+        <p>
+          <li class="li1">STEP 2</li>
+          <li class="li2">Please select your lunch for registered day. There will be no further costs for the lunch.</li>
+        </p>
+      </div>
+      <table class="table2">
+        <tr>
+          <th>15. Oct (Thu)</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li class="li3">menu 1<input type="radio"></li>
+              <li class="li3">menu 2<input type="radio"></li>
+              <li class="li3">menu 3<input type="radio"></li>
+              <li class="li3">menu 4<input type="radio"></li>
+              <li class="li3">menu 5<input type="radio"></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <table class="table3">
+        <tr>
+          <th>16. Oct (Fri)</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li class="li3">menu 1<input type="radio"></li>
+              <li class="li3">menu 2<input type="radio"></li>
+              <li class="li3">menu 3<input type="radio"></li>
+              <li class="li3">menu 4<input type="radio"></li>
+              <li class="li3">menu 5<input type="radio"></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <div class="end">
+        <a href="#"><button class="save" type="button" name="button">Save Selection</button></a>
+      </div>
     </section>
+    <footer class="footer2">
+      <img class="cckorea" src="./images/cckorea.jfif" alt="Creative Commons Korea Logo">
+      <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

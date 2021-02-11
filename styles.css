@@ -267,6 +267,8 @@ li {
 
 .cckorea {
   padding-right: 50px;
+  height: 25%;
+  width: 25%;
 }
 
 @media screen and (max-width: 768px) {
@@ -302,6 +304,11 @@ li {
   .logos {
     padding: 20px;
   }
+
+  .partners {
+    margin: auto;
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -321,6 +328,11 @@ li {
     font-size: 8px;
     width: 150px;
   }
+
+  .partners {
+    margin: auto;
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -335,5 +347,10 @@ li {
   .navlinks2,
   .navlinks1 {
     margin-right: 0;
+  }
+
+  .partners {
+    margin: auto;
+    width: 50%;
   }
 }
