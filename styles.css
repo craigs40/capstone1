@@ -218,6 +218,10 @@ li {
   padding: 5px;
 }
 
+.title {
+  color: #ec5242;
+}
+
 .feat-text {
   display: inline-block;
   width: 250px;
