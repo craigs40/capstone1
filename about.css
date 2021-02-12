@@ -16,7 +16,6 @@ body {
   height: auto;
   width: 100%;
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
 }
 
 .hamburger {
@@ -149,18 +148,15 @@ hr {
 }
 
 .about-img {
-  padding-left: 350px;
-  width: 300px;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .past-cc {
   display: flex;
   justify-content: center;
-}
-
-.past-img {
-  padding: 50px;
 }
 
 .see {
@@ -174,6 +170,10 @@ hr {
   justify-content: space-between;
 }
 
+.past-img {
+  padding: 10px;
+}
+
 .cckorea {
   padding: 50px;
   height: 25%;
@@ -181,7 +181,7 @@ hr {
 }
 
 .rights {
-  padding-right: 100px;
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -190,25 +190,51 @@ hr {
     display: none;
   }
 
-  body {
-    width: 800px;
-    overflow-x: hidden;
+  .top,
+  .middle,
+  .end,
+  footer {
+    width: 102vw;
+  }
+
+  .info {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  h1 {
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  .creative {
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .about-img,
+  .past-cc {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 
   .about-img {
-    width: 250px;
-    padding-left: 250px;
+    padding: 10px;
   }
 
   .past-cc {
-    display: block;
-    margin: auto;
-    width: 50%;
+    margin-left: 0;
   }
 
   .cckorea {
-    margin: auto;
-    width: 50%;
+    width: 20%;
+  }
+
+  .rights {
+    font-size: 10px;
+    padding-top: 30px;
   }
 }
 
@@ -217,8 +243,10 @@ hr {
     display: none;
   }
 
-  .about-img {
-    margin: auto;
+  .about-img,
+  .past-cc {
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
   }
 }

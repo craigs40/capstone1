@@ -16,7 +16,6 @@ body {
   height: auto;
   width: 100%;
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
 }
 
 .hamburger {
@@ -231,17 +230,35 @@ ul {
     display: none;
   }
 
-  body {
-    width: 800px;
-    overflow-x: hidden;
+  .top,
+  .tickets,
+  .lunch,
+  footer {
+    width: 187vw;
+  }
+
+  .step1,
+  .step2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  table {
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  button {
+    font-size: 30px;
   }
 
   .step1 {
-    font-size: 12px;
+    padding-right: 10px;
   }
 
-  .step2 {
-    font-size: 11px;
+  footer {
+    display: flex;
+    justify-content: space-around;
   }
 }
 

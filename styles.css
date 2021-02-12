@@ -4,7 +4,6 @@ body {
   height: auto;
   width: 100%;
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
 }
 
 @font-face {
@@ -171,8 +170,7 @@ li {
 .cards {
   float: left;
   width: 150px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: auto;
   padding-top: 50px;
   font-size: 12px;
   text-align: center;
@@ -194,28 +192,27 @@ li {
 .fs {
   background-color: white;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .featured {
   background-color: white;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
 
-.col1 {
-  margin-left: 200px;
-  padding-right: 100px;
-}
-
+.col1,
 .col2 {
-  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .feat-img {
   padding: 5px;
+  width: 150px;
 }
 
 .title {
@@ -225,8 +222,8 @@ li {
 .feat-text {
   display: inline-block;
   width: 250px;
-  height: 50px;
-  font-size: 11px;
+  height: 150px;
+  font-size: 10px;
   margin-left: 20px;
 }
 
@@ -249,8 +246,6 @@ li {
 .logos {
   height: 20px;
   width: 90px;
-  padding-right: 100px;
-  padding-left: 100px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -266,9 +261,17 @@ li {
 }
 
 .cckorea {
-  padding-right: 50px;
   height: 25%;
   width: 25%;
+}
+
+.speakers {
+  display: flex;
+}
+
+.google,
+.airbnb {
+  width: 70px;
 }
 
 @media screen and (max-width: 768px) {
@@ -277,37 +280,68 @@ li {
     display: none;
   }
 
-  header,
-  main,
-  .fs,
-  .featured,
-  .footer1,
-  .footer2 {
-    width: 900px;
+  body {
+    width: auto;
+  }
+
+  .header-content {
+    width: 100vw;
+  }
+
+  .creative {
+    font-size: 55px;
+  }
+
+  .box-text,
+  h2,
+  h3 {
+    font-size: 25px;
+  }
+
+  .cap {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .box-text {
+    width: 100%;
+    padding: 5px;
   }
 
   .row,
-  .featured {
-    display: grid;
-  }
-
-  .col2 {
-    margin-left: 200px;
-  }
-
   .featured,
-  .main,
-  footer {
-    justify-content: center;
-  }
-
-  .logos {
-    padding: 20px;
-  }
-
-  .partners {
+  .partners,
+  .footer2 {
+    display: grid;
     margin: auto;
-    width: 50%;
+  }
+
+  .main,
+  .featured,
+  .fs,
+  .footer1,
+  .footer2 {
+    width: 145vw;
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .speakers {
+    display: flex;
+  }
+
+  .feat-text {
+    width: 100%;
+    font-size: 11px;
+    margin-right: 5px;
+  }
+
+  .cckorea {
+    height: 50px;
+    width: 150px;
   }
 }
 
@@ -316,21 +350,28 @@ li {
     display: none;
   }
 
-  .navlinks2 {
-    margin-right: auto;
+  .navlinks1,
+  .navlinks2,
+  .cards,
+  .partners {
+    margin: auto;
+  }
+
+  .box-text {
+    width: 100%;
   }
 
   .logos {
     padding: 20px;
   }
 
-  .feat-text {
-    font-size: 8px;
-    width: 150px;
+  .cards,
+  .main-link,
+  .main-heading {
+    font-size: 15px;
   }
 
   .partners {
-    margin: auto;
     width: 50%;
   }
 }
