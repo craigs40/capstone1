@@ -14,14 +14,13 @@
 body {
   margin: auto;
   height: auto;
-  width: 100%;
   font-family: 'Lato', sans-serif;
 }
 
 .hamburger {
-  height: 30px;
-  width: 30px;
-  padding: 15px;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
 }
 
 .nav1,
@@ -40,18 +39,11 @@ body {
   height: 15px;
   width: 15px;
   padding-top: 5px;
-  padding-left: 10px;
-}
-
-.navlinks1,
-.navlinks2, {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: auto;
 }
 
 .navlinks1 {
   padding-bottom: 10px;
-  padding-right: 60px;
 }
 
 a {
@@ -74,7 +66,7 @@ span {
 .nav-logo {
   height: 50px;
   width: 150px;
-  margin-left: 50px;
+  margin: auto;
   padding-top: 5px;
 }
 
@@ -119,9 +111,13 @@ span {
 .info,
 .info-link,
 h1 {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: auto;
+  width: 75%;
   text-align: center;
+}
+
+h1 {
+  padding-top: 30px;
 }
 
 .creative {
@@ -136,10 +132,14 @@ hr {
   width: 5%;
 }
 
+.info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .info-link {
   color: black;
   font-weight: bold;
-  padding-top: 10px;
 }
 
 .arrow {
@@ -149,9 +149,8 @@ hr {
 
 .about-img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin: auto;
+  padding: 10px;
 }
 
 .past-cc {
@@ -174,8 +173,13 @@ hr {
   padding: 10px;
 }
 
+.end,
+.middle {
+  padding-bottom: 20px;
+}
+
 .cckorea {
-  padding: 50px;
+  padding: 25px;
   height: 25%;
   width: 25%;
 }
@@ -184,7 +188,7 @@ hr {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav1,
   .nav2 {
     display: none;
@@ -194,16 +198,14 @@ hr {
   .middle,
   .end,
   footer {
-    width: 102vw;
+    margin: 0;
   }
 
   .info {
-    font-size: 20px;
-    margin: 10px;
+    font-size: 16px;
   }
 
   h1 {
-    margin: 20px;
     font-size: 20px;
   }
 
@@ -213,19 +215,14 @@ hr {
   }
 
   .about-img,
-  .past-cc {
+  .past-cc,
+  .past-img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin: auto;
   }
 
   .about-img {
-    padding: 10px;
-  }
-
-  .past-cc {
-    margin-left: 0;
+    width: 75%;
   }
 
   .cckorea {
@@ -234,19 +231,17 @@ hr {
 
   .rights {
     font-size: 10px;
-    padding-top: 30px;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .mobile-nav {
     display: none;
   }
 
   .about-img,
   .past-cc {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 50%;
   }
 }
@@ -258,9 +253,7 @@ hr {
 
   .about-img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 350px;
-    padding: 0;
   }
 }

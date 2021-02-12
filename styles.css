@@ -1,9 +1,7 @@
 body {
-  margin: auto;
   background-image: url(./images/pexels-ibrahim-hafeez-3.jpg);
-  height: auto;
-  width: 100%;
   font-family: 'Lato', sans-serif;
+  margin: auto;
 }
 
 @font-face {
@@ -20,9 +18,9 @@ body {
 }
 
 .hamburger {
-  height: 30px;
-  width: 30px;
-  padding: 15px;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
 }
 
 .nav1,
@@ -40,8 +38,7 @@ body {
 .social-icons {
   height: 15px;
   width: 15px;
-  padding-top: 5px;
-  padding-left: 10px;
+  padding: 5px;
 }
 
 .navlinks1,
@@ -52,7 +49,6 @@ body {
 
 .navlinks1 {
   padding-bottom: 10px;
-  padding-right: 160px;
 }
 
 a {
@@ -75,8 +71,8 @@ span {
 .nav-logo {
   height: 50px;
   width: 150px;
+  padding: 5px;
   margin-left: 50px;
-  padding-top: 5px;
 }
 
 .navlinks2 {
@@ -101,8 +97,8 @@ span {
 }
 
 .header-content {
-  margin-left: 100px;
-  margin-right: 300px;
+  margin: auto;
+  width: 75%;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -131,8 +127,7 @@ h1 {
 
 .box-text {
   border: 2px solid white;
-  padding: 20px;
-  margin-right: 300px;
+  padding: 5px;
 }
 
 .date {
@@ -169,10 +164,7 @@ li {
 
 .cards {
   float: left;
-  width: 150px;
-  margin: auto;
-  padding-top: 50px;
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -198,9 +190,13 @@ li {
 
 .featured {
   background-color: white;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: center;
+}
+
+h4 {
+  margin-top: 0;
 }
 
 .col1,
@@ -221,10 +217,11 @@ li {
 
 .feat-text {
   display: inline-block;
-  width: 250px;
+  width: 300px;
   height: 150px;
-  font-size: 10px;
+  font-size: 13px;
   margin-left: 20px;
+  padding-bottom: 10px;
 }
 
 .featured-hr {
@@ -235,7 +232,7 @@ li {
   background-color: #4e4e4e;
   padding-top: 20px;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .partners {
@@ -246,8 +243,6 @@ li {
 .logos {
   height: 20px;
   width: 90px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .footer2 {
@@ -274,39 +269,25 @@ li {
   width: 70px;
 }
 
-@media screen and (max-width: 768px) {
+.f-links {
+  padding: 10px;
+  color: black;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
   .nav1,
   .nav2 {
     display: none;
   }
 
-  body {
-    width: auto;
-  }
-
   .header-content {
-    width: 100vw;
+    width: 100%;
+    margin: 0;
   }
 
   .creative {
-    font-size: 55px;
-  }
-
-  .box-text,
-  h2,
-  h3 {
-    font-size: 25px;
-  }
-
-  .cap {
-    font-size: 18px;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .box-text {
-    width: 100%;
-    padding: 5px;
+    font-size: 50px;
   }
 
   .row,
@@ -317,35 +298,40 @@ li {
     margin: auto;
   }
 
-  .main,
-  .featured,
-  .fs,
-  .footer1,
-  .footer2 {
-    width: 145vw;
-  }
-
   .cards {
     width: 100%;
+    font-size: 20px;
   }
 
-  .speakers {
-    display: flex;
+  h4 {
+    margin-top: 5px;
+  }
+
+  .feat-img {
+    height: 130px;
   }
 
   .feat-text {
     width: 100%;
-    font-size: 11px;
-    margin-right: 5px;
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  .chon {
+    margin-top: 10px;
   }
 
   .cckorea {
-    height: 50px;
+    height: 40px;
     width: 150px;
+  }
+
+  .logos {
+    padding: 10px;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .mobile-nav {
     display: none;
   }
@@ -353,11 +339,14 @@ li {
   .navlinks1,
   .navlinks2,
   .cards,
-  .partners {
-    margin: auto;
+  .partners,
+  .header-content {
+    margin: 0;
   }
 
-  .box-text {
+  .header-content,
+  .cards,
+  .feat-text {
     width: 100%;
   }
 
@@ -368,21 +357,39 @@ li {
   .cards,
   .main-link,
   .main-heading {
-    font-size: 15px;
+    font-size: 20px;
+  }
+
+  .row,
+  .featured {
+    display: grid;
+  }
+
+  .cards {
+    font-size: 25px;
+  }
+
+  .feat-img {
+    width: 170px;
+  }
+
+  .feat-text {
+    font-size: 16px;
+  }
+
+  .speakers {
+    padding-bottom: 10px;
   }
 
   .partners {
     width: 50%;
+    margin: auto;
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .mobile-nav {
     display: none;
-  }
-
-  .logos {
-    padding: 20px;
   }
 
   .navlinks2,
@@ -390,8 +397,24 @@ li {
     margin-right: 0;
   }
 
+  .creative {
+    width: 700px;
+  }
+
+  .box-text {
+    width: 500px;
+  }
+
+  .cards {
+    padding: 50px;
+  }
+
   .partners {
     margin: auto;
     width: 50%;
+  }
+
+  .logos {
+    padding: 20px;
   }
 }
