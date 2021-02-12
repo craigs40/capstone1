@@ -1,0 +1,420 @@
+body {
+  background-image: url(./images/pexels-ibrahim-hafeez-3.jpg);
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'cocogooseregular';
+  src:
+    url('./fonts/cocogoose_pro-trial-webfont.woff2') format('woff2'),
+    url('./fonts/cocogoose_pro-trial-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+}
+
+.hamburger {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+}
+
+.nav1,
+.nav2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav1 {
+  justify-content: flex-end;
+  background-color: #4e4e4e;
+  font-size: 16px;
+}
+
+.social-icons {
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+}
+
+.navlinks1,
+.navlinks2 {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.navlinks1 {
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  padding: 10px;
+}
+
+.top-text {
+  color: white;
+}
+
+.nav2 {
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 150px;
+  padding: 5px;
+  margin-left: 50px;
+}
+
+.navlinks2 {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.bottom-text {
+  color: black;
+}
+
+.about {
+  color: #ec5242;
+}
+
+.campaign-btn {
+  border: 5px solid #ec5242;
+  background-color: white;
+  padding: 10px;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.header-content {
+  margin: auto;
+  width: 75%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.creative {
+  font-family: 'cocogooseregular', sans-serif;
+  font-size: 60px;
+  background: url(./images/pexels-steve-johnson-1085685.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.box-text,
+.date,
+.location {
+  font-weight: bold;
+}
+
+.box-text {
+  border: 2px solid white;
+  padding: 5px;
+}
+
+.date {
+  font-size: 30px;
+  margin: 0;
+}
+
+.location {
+  padding-bottom: 20px;
+}
+
+.main {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 2%;
+}
+
+li {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  float: left;
+  font-size: 15px;
+  text-align: center;
+}
+
+.card-img {
+  height: 50px;
+  width: 50px;
+}
+
+.main-link {
+  color: white;
+  font-size: 16px;
+  text-decoration: underline;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.fs {
+  background-color: white;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.featured {
+  background-color: white;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.col1,
+.col2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.feat-img {
+  padding: 5px;
+  width: 150px;
+}
+
+.title {
+  color: #ec5242;
+}
+
+.feat-text {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  font-size: 13px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+.featured-hr {
+  margin: 0;
+}
+
+.footer1 {
+  background-color: #4e4e4e;
+  padding-top: 20px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+}
+
+.logos {
+  height: 20px;
+  width: 90px;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 10px;
+}
+
+.cckorea {
+  height: 25%;
+  width: 25%;
+}
+
+.speakers {
+  display: flex;
+}
+
+.google,
+.airbnb {
+  width: 70px;
+}
+
+.f-links {
+  padding: 10px;
+  color: black;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .nav1,
+  .nav2 {
+    display: none;
+  }
+
+  .header-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .creative {
+    font-size: 50px;
+  }
+
+  .row,
+  .featured,
+  .partners,
+  .footer2 {
+    display: grid;
+    margin: auto;
+  }
+
+  .cards {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  h4 {
+    margin-top: 5px;
+  }
+
+  .feat-img {
+    height: 130px;
+  }
+
+  .feat-text {
+    width: 100%;
+    font-size: 10px;
+    margin-left: 0;
+  }
+
+  .chon {
+    margin-top: 10px;
+  }
+
+  .cckorea {
+    height: 40px;
+    width: 150px;
+  }
+
+  .logos {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .navlinks1,
+  .navlinks2,
+  .cards,
+  .partners,
+  .header-content {
+    margin: 0;
+  }
+
+  .header-content,
+  .cards,
+  .feat-text {
+    width: 100%;
+  }
+
+  .logos {
+    padding: 20px;
+  }
+
+  .cards,
+  .main-link,
+  .main-heading {
+    font-size: 20px;
+  }
+
+  .row,
+  .featured {
+    display: grid;
+  }
+
+  .cards {
+    font-size: 25px;
+  }
+
+  .feat-img {
+    width: 170px;
+  }
+
+  .feat-text {
+    font-size: 16px;
+  }
+
+  .speakers {
+    padding-bottom: 10px;
+  }
+
+  .partners {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .navlinks2,
+  .navlinks1 {
+    margin-right: 0;
+  }
+
+  .creative {
+    width: 700px;
+  }
+
+  .box-text {
+    width: 500px;
+  }
+
+  .cards {
+    padding: 50px;
+  }
+
+  .partners {
+    margin: auto;
+    width: 50%;
+  }
+
+  .logos {
+    padding: 20px;
+  }
+}

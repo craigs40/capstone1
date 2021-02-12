@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'cocogooseregular';
+  src:
+    url('./fonts/cocogoose_pro-trial-webfont.woff2') format('woff2'),
+    url('./fonts/cocogoose_pro-trial-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: auto;
+  height: auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.hamburger {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+}
+
+.nav1,
+.nav2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav1 {
+  justify-content: flex-end;
+  background-color: #4e4e4e;
+  font-size: 16px;
+}
+
+.social-icons {
+  height: 15px;
+  width: 15px;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.navlinks1 {
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  padding: 10px;
+}
+
+.top-text {
+  color: white;
+}
+
+.nav2 {
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 150px;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.navlinks2 {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.bottom-text {
+  color: black;
+}
+
+.about {
+  color: #ec5242;
+}
+
+.campaign-btn {
+  border: 5px solid #ec5242;
+  background-color: white;
+  padding: 10px;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.top,
+.end {
+  background-color: #d3d3d3;
+}
+
+.home {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px;
+}
+
+.home-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.creative,
+.info,
+.info-link,
+h1 {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+.creative {
+  font-family: 'cocogooseregular', sans-serif;
+  font-size: 60px;
+  background: url(./images/pexels-steve-johnson-1085685.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+hr {
+  width: 5%;
+}
+
+.info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.info-link {
+  color: black;
+  font-weight: bold;
+}
+
+.arrow {
+  height: 10px;
+  width: 10px;
+}
+
+.about-img {
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.past-cc {
+  display: flex;
+  justify-content: center;
+}
+
+.see {
+  padding-top: 30px;
+}
+
+.footer3 {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.past-img {
+  padding: 10px;
+}
+
+.end,
+.middle {
+  padding-bottom: 20px;
+}
+
+.cckorea {
+  padding: 25px;
+  height: 25%;
+  width: 25%;
+}
+
+.rights {
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav1,
+  .nav2 {
+    display: none;
+  }
+
+  .top,
+  .middle,
+  .end,
+  footer {
+    margin: 0;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .creative {
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .about-img,
+  .past-cc,
+  .past-img {
+    display: block;
+    margin: auto;
+  }
+
+  .about-img {
+    width: 75%;
+  }
+
+  .cckorea {
+    width: 20%;
+  }
+
+  .rights {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .about-img,
+  .past-cc {
+    margin: auto;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .about-img {
+    display: block;
+    margin: auto;
+    width: 350px;
+  }
+}

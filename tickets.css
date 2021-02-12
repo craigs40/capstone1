@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'cocogooseregular';
+  src:
+    url('./fonts/cocogoose_pro-trial-webfont.woff2') format('woff2'),
+    url('./fonts/cocogoose_pro-trial-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: auto;
+  height: auto;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.hamburger {
+  height: 30px;
+  width: 30px;
+  padding: 15px;
+}
+
+.nav1,
+.nav2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav1 {
+  justify-content: flex-end;
+  background-color: #4e4e4e;
+  font-size: 16px;
+}
+
+.social-icons {
+  height: 15px;
+  width: 15px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.navlinks1 {
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  padding: 10px;
+}
+
+.top-text {
+  color: white;
+}
+
+.nav2 {
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.nav-logo {
+  height: 50px;
+  width: 150px;
+  margin-left: 50px;
+  padding-top: 5px;
+}
+
+.navlinks2 {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.bottom-text {
+  color: black;
+}
+
+.about {
+  color: #ec5242;
+}
+
+.campaign-btn {
+  border: 5px solid #ec5242;
+  background-color: white;
+  padding: 10px;
+  color: #ec5242;
+  margin-bottom: 10px;
+}
+
+.home {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.home-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.lunch {
+  background-color: #d3d3d3;
+}
+
+hr {
+  width: 3%;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.syl {
+  padding-top: 50px;
+}
+
+.step1,
+.step2 {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #a7a7a7;
+  border-radius: 25px;
+  width: 70%;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.li1,
+.price {
+  color: #ec5242;
+}
+
+.price {
+  text-align: center;
+}
+
+.li2 {
+  list-style: none;
+  padding-left: 30px;
+}
+
+table,
+th,
+td {
+  margin: auto;
+  border: 1px solid #a7a7a7;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f0efef;
+}
+
+td {
+  background-color: white;
+}
+
+ul {
+  display: flex;
+}
+
+.li3 {
+  list-style: none;
+  padding-right: 50px;
+}
+
+.table1,
+.table2,
+.table3 {
+  margin-top: 50px;
+}
+
+.table1,
+.table3 {
+  margin-bottom: 100px;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.save {
+  border: 5px solid #ec5242;
+  background-color: #ec5242;
+  padding: 10px;
+  color: white;
+  justify-content: center;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 10px;
+}
+
+.cckorea {
+  padding-right: 50px;
+  height: 25%;
+  width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .nav1,
+  .nav2 {
+    display: none;
+  }
+
+  .top,
+  .tickets,
+  .lunch,
+  footer {
+    margin: 0;
+  }
+
+  .li1 {
+    text-align: center;
+    list-style: none;
+  }
+
+  .step1,
+  .step2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  table {
+    font-weight: bold;
+    margin: 20px;
+  }
+
+  button {
+    font-size: 30px;
+  }
+
+  .step1 {
+    padding-right: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media
+  only screen and (max-width: 760px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    font-size: 12px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1)::before { content: "Ticket"; }
+  td:nth-of-type(2)::before { content: "1-Day-Ticket"; }
+  td:nth-of-type(3)::before { content: "1-Day-Ticket"; }
+  td:nth-of-type(4)::before { content: "2-Day-Ticket"; }
+  td:nth-of-type(5)::before { content: "CC Affiliate/Partners"; }
+
+  ul {
+    display: block;
+    padding: 0;
+  }
+
+  .li3 {
+    padding-bottom: 10px;
+  }
+}
