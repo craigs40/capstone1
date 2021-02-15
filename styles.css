@@ -123,6 +123,7 @@ h1 {
   border: 2px solid white;
   padding: 5px;
   background: rgba(198, 198, 198, 0.3);
+  width: 300px;
 }
 
 .date {
@@ -180,6 +181,7 @@ li {
   height: 50px;
   width: 50px;
   margin: auto;
+  padding-top: 10px;
 }
 
 .main-link {
@@ -399,31 +401,35 @@ h4 {
     align-items: center;
     padding: 1rem;
   }
+}
 
-  @media screen and (min-width: 1024px) {
-    .mobile-nav {
-      display: none;
-    }
+@media screen and (min-width: 1024px) {
+  nav.mobile-nav {
+    display: none;
+  }
 
-    .creative {
-      width: 700px;
-    }
+  .creative {
+    width: 700px;
+  }
 
-    .box-text {
-      width: 500px;
-    }
+  .box-text {
+    width: 500px;
+  }
 
-    .cards {
-      padding: 50px;
-    }
+  .cards {
+    padding: 50px;
+  }
 
-    .partners {
-      margin: auto;
-      width: 50%;
-    }
+  .main-link {
+    font-size: 12px;
+  }
 
-    .logos {
-      padding: 20px;
-    }
+  .partners {
+    margin: auto;
+    width: 50%;
+  }
+
+  .logos {
+    padding: 20px;
   }
 }
